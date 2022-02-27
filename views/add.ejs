@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="/css/style.css">
+   <title>Form</title>
+</head>
+<body>
+
+   <%- include('./common/form-header.ejs') %>
+   
+   <!-- <form action="/add" method="POST">
+     <input type="text" name="firstName" placeholder="First Name"><br>
+     <input type="text" name="lastName" placeholder="Last name"><br>
+     <input type="submit" value="Submit">
+  </form> -->
+
+
+
+  <div class="alert">
+   <h2>Form submitted successfully</h2>
+</div>
+
+<div class="form-wrapper" style="margin-bottom:20px;">
+   <div class="form-inner">
+   <div class="form-header">
+       <h2>Registeration</h2>
+   </div>
+   <form action="/add" method="POST" class="form" autocomplete="off" id="registration">
+     <input type="text" name="firstName" placeholder="First Name" required>
+     <input type="text" name="lastName" placeholder="Last Name" required>
+     <!-- <input type="text" placeholder="Phone"> -->
+     <input type="email" name="email" placeholder="Email" required>
+       <button id="btn" type="submit">Submit</button>
+     <!-- <input type="submit" value="Submit">  -->
+   </form>
+</div>
+</div>
+
+
+
+<!-- <script src="/js/script.js"></script> -->
+
+</body>
+</html>
